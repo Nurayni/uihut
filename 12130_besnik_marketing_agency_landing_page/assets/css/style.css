@@ -1,0 +1,1431 @@
+/*------ common css --------*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	height: 100%;
+	scroll-behavior: smooth;
+	background:#f4f7fc;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h4 {
+	margin: 0;
+	padding: 0;
+}
+img {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	transition: .3s all ease;
+}
+/*------ common css End --------*/
+
+/*------ Header css --------*/
+/*------ Navbar css --------*/
+._nav_color {
+	background:var(--bg);
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.04);
+	border-radius: 0px 0px 25px 25px;
+	padding: 27px 35px;
+}
+._bensik_nav_item {
+	margin:0 16px;
+}
+._bensik_nav_link {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color:var(--color) !important;
+	transition:.2s all ease;
+	position: relative;
+}
+._bensik_nav_link::before {
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:10px;
+	width: 30px;
+	height:0px;
+	border: 1px solid var(--color1);
+	visibility: hidden;
+	transition:.2s all ease;
+}
+._bensik_nav_link:hover {
+	color:var(--color1) !important;
+}
+._bensik_nav_link:hover::before{
+	visibility: visible;
+}
+._bensik_nav_link_active {
+	position: relative;
+}
+._bensik_nav_link_active::before {
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:10px;
+	width: 30px;
+	height:0px;
+	border: 1px solid var(--color1);
+	visibility: visible;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: 0px;
+    content: url(../images/caret.svg);
+    border: 0;
+}
+._besik_nav_right_list {
+	display: flex;
+	align-items: center;
+}
+._besik_nav_right_list_item {
+	margin:0 16px;
+}
+._besik_nav_right_list_item_link {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color:var(--color);
+	transition:.2s all ease;
+}
+._besik_nav_right_list_item_link:hover {
+	color:var(--color1);
+}
+._besik_nav_right_list_item_link_active {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color:var(--bg);
+	background:var(--bg1);
+	padding:15px 21px;
+	box-shadow: 0px 20px 30px -16px rgba(60, 80, 224, 0.25);
+	border-radius: 10px;
+	transition:.2s all ease;
+}
+._besik_nav_right_list_item_link_active:hover {
+	box-shadow: none;
+	color:#fff;
+	background: var(--bg1);
+}
+/*------ Navbar css End --------*/
+._bensik_header_wrap {
+	padding:100px 0;
+}
+._bensik_header_title {
+	font-family: Inter;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color:var(--color1);
+	margin:0 0 36px 0;
+}
+._bensik_header_content_area {
+	display: flex;
+	align-items: center;
+	margin:0 0 55px 0;
+}
+._round_img {
+	max-width: 50px;
+	border-radius: 50%;
+	box-shadow: 3px 6px 15px rgba(253, 180, 0, 0.15);
+	border: 2px solid var(--bg);
+}
+._bensik_header_content_txt {
+	padding: 0 0 0 20px;
+}
+._bensik_header_content_txt_para {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	color:var(--color);
+	max-width: 70%;
+}
+._bensik_header_btn_grp {
+	display: flex;
+	align-items: center;
+}
+._bensik_header_btn_link {
+	font-family: Inter;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--bg);
+    background: var(--bg1);
+    border-radius: 10px;
+    transition: .2s all ease;
+    width: 170px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._bensik_header_btn_link:hover {
+	color: #fff;
+    background: var(--bg1);
+}
+._bensik_header_play_btn_link {
+	background: transparent;
+    border: none;
+    font-family: Inter;
+    font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+    color: var(--color);
+    width: 210px;
+    margin: 0 13px 0;
+	transition:.2s all ease;
+	outline:none !important;
+}
+._bensik_header_play_btn_link svg ._ellipse {
+	transform-origin: 50% 44%;
+    transition: .2s all ease;
+}
+._bensik_header_play_btn_link:hover svg ._ellipse {
+	transform: rotate(180deg);
+}
+/*---- Responsive Start ------*/
+@media(min-width:1200px) and (max-width:1399px) {
+	._bensik_header_content_txt_para {
+		max-width: 80%;
+	}
+}
+@media(max-width:1199px) {
+	._bensik_nav_item {
+		margin: 0 6px;
+	}
+	._bensik_header_title {
+		font-size: 52px;
+	}
+	._bensik_header_content_txt_para {
+		max-width: 100%;
+	}
+}
+@media(max-width:991px) {
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
+	._bensik_nav_list {
+		margin: 20px 0;
+	}
+	._bensik_nav_link_active::before {
+		left: 0;
+	}
+	._besik_nav_right_list_item {
+		margin: 0 16px 0 8px;
+	}
+	.navbar-nav .dropdown-menu {
+		position: static;
+		width: fit-content;
+	}
+	._bensik_nav_link::before {
+		left: 0;
+	}
+	._bensik_header_image {
+		margin: 60px 0 0;
+	}
+}
+@media(max-width:767px) {
+	._bensik_header_content {
+		text-align: center;
+	}
+	._bensik_header_content_area {
+		flex-direction: column;
+	}
+	._bensik_header_content_txt_image {
+		margin: 0 0 10px 0;
+	}
+	._bensik_header_btn_grp {
+		justify-content: center;
+	}
+	._bensik_header_wrap {
+		padding: 100px 0 70px 0;
+	}
+}
+@media(max-width:575px) {
+	._bensik_header_title {
+		font-size: 32px;
+	}
+	._bensik_header_play_btn_link {
+		font-size: 10px;
+	}
+	._bensik_header_wrap {
+		padding: 50px 0;
+	}
+}
+/*---- Responsive End ------*/
+/*------ Header css End --------*/
+
+/*------ Service css --------*/
+._bensik_service_wrapper {
+	padding:50px 0px 100px 0;
+}
+._bensik_service_content {
+	text-align: center;
+}
+._bensik_service_content_txt {
+	font-family: Inter;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.2;
+	letter-spacing: 0.12em;
+	color:var(--color2);
+	margin:0 0 15px 0;
+	text-transform: uppercase;
+}
+._bensik_service_content_title {
+	font-family: Inter;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color:var(--color3);
+	margin:0 0 20px 0;
+}
+._bensik_service_content_para {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	color:var(--color);
+	max-width: 40%;
+    margin: 0 auto 60px auto;
+}
+.bensik_service_inner {
+	background: #FFFFFF;
+	border: 1px solid #F5F5F5;
+	border-radius: 20px;
+	padding:50px 45px;
+}
+.bensik_service_inner_icon {
+	background: var(--bg1);
+	box-shadow: 0px 16px 45px -12px rgba(60, 80, 224, 0.2);
+	border-radius: 15px;
+	width: fit-content;
+	padding:25px;
+	margin:0 0 36px 0;
+}
+.bensik_service_inner_icon1 {
+	background: #FF5670;
+}
+.bensik_service_inner_icon2 {
+	background: #FDB400;
+}
+.bensik_service_inner_title {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color:var(--color3);
+	margin:0 0 18px 0;
+}
+.bensik_service_inner_para {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	color: var(--color);
+	max-width: 82%;
+}
+/*---- Responsive Start ------*/
+@media(min-width:1200px) and (max-width:1399px) {
+	._bensik_service_content_para {
+		max-width: 46%;
+	}
+	.bensik_service_inner_para {
+		max-width: 100%;
+	}
+}
+@media(max-width:1199px) {
+	._bensik_service_content_para {
+		font-size: 16px;
+	}
+	.bensik_service_inner_title {
+		font-size: 20px;
+	}
+	.bensik_service_inner_para {
+		font-size: 16px;
+		max-width: 100%;
+	}
+}
+@media(max-width:991px) {
+	.bensik_service_inner {
+		margin: 0 0 20px 0;
+	}
+}
+@media(max-width:767px) {
+	._bensik_service_content_title {
+		font-size: 40px;
+	}
+	._bensik_service_content_para {
+		max-width: 100%;
+	}
+	.bensik_service_inner_icon {
+		margin: 0 auto 36px auto;
+	}
+	.bensik_service_inner {
+		margin: 0 0 20px 0;
+		text-align: center;
+	}
+}
+@media(max-width:767px) {
+	._bensik_service_wrapper {
+		padding: 50px 0;
+	}
+	._bensik_service_content_txt {
+		font-size: 16px;
+	}
+	._bensik_service_content_title {
+		font-size: 36px;
+	}
+}
+/*---- Responsive End ------*/
+/*------ Service css End --------*/
+
+/*------ About css --------*/
+._bensik_about_wrapper {
+	padding:100px 0px 100px 0;
+}
+._bensik_about_image {
+	position: relative;
+	z-index: 1;
+}
+._bensik_about_shape {
+	position: absolute;
+	z-index: -1;
+	top: -33px;
+    left: -32px;
+}
+._about_shape {
+	max-width:195px;
+}
+._about_img {
+	max-width: 554px;
+}
+._bensik_about_content {
+    margin: 0 -16px;
+}
+._bensik_about_content_txt{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.12em;
+	color: var(--bg1);
+	text-transform: uppercase;
+	margin:0 0 15px 0;
+}
+._bensik_about_content_title{
+	font-family: Inter;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color: var(--color1);
+	max-width: 80%;
+	margin:0 0 20px 0;
+}
+._bensik_about_content_para{
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	color: var(--color);
+	margin:0 0 30px 0;
+	max-width: 74%;
+}
+._bensik_about_content_para1{
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	color: var(--color);
+	max-width: 54%;
+	margin: 0 0 30px 0;
+}
+._bensik_about_content_link {
+	display: block;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: #FFFFFF;
+	padding:21px 42px;
+	background: var(--bg1);
+	box-shadow: 0px 20px 30px -16px rgba(60, 80, 224, 0.2);
+	border-radius: 10px;
+	width: 170px;
+}
+._bensik_about_content_link:hover {
+    color: #fff;
+    background: var(--bg1);
+}
+/*---- Responsive Start ------*/
+@media(min-width:1200px) and (max-width:1399px) {
+	._bensik_about_content_title {
+		max-width: 90%;
+	}
+	._bensik_about_content_para {
+		max-width: 84%;
+	}
+	._bensik_about_content_para1 {
+		max-width: 64%;
+	}
+}
+@media(max-width:1199px) {
+	._bensik_about_content_title {
+		font-size: 38px;
+		max-width: 100%;
+	}
+	._bensik_about_content_para {
+		font-size: 16px;
+		max-width: 100%;
+	}
+	._bensik_about_content_para1 {
+		font-size: 16px;
+		max-width: 100%;
+	}
+}
+@media(max-width:767px) {
+	._bensik_about_wrapper {
+		padding: 70px 0px 70px 0;
+	}
+	._bensik_about_content {
+		text-align: center;
+	}
+	._bensik_about_content_link {
+		margin: 0 auto;
+	}
+}
+@media(max-width:575px) {
+	._bensik_about_content {
+		margin:0;
+	}
+	._bensik_about_shape {
+		display: none;
+	}
+	._bensik_about_content_txt {
+		font-size: 16px;
+	}
+	._bensik_about_content_title {
+		font-size: 36px;
+	}
+	._bensik_about_content_para {
+		font-size: 14px;
+		max-width: 86%;
+		margin: 0 auto 30px auto;
+	}
+	._bensik_about_content_para1 {
+		font-size: 14px;
+		max-width: 86%;
+		margin: 0 auto 30px auto;
+	}
+	._bensik_about_wrapper {
+		padding: 50px 0;
+	}
+}
+/*---- Responsive End ------*/
+/*------ About css End --------*/
+
+/*------ Solution css End --------*/
+._bensik_solution_wrapper {
+	padding: 50px 0px 80px 0;
+}
+._bensik_solution_image {
+	position: relative;
+	z-index: 1;
+}
+._bensik_solution_shape {
+	position: absolute;
+	top:94px;
+	z-index: -1;
+	right: 50px;
+}
+._solution_shape {
+	max-width:195px;
+}
+._solution_img {
+	max-width:582px;
+}
+._bensik_solution_content_txt {
+	text-transform: uppercase;
+	font-family: Inter;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.2;
+	letter-spacing: 0.12em;
+	color: var(--bg1);
+	margin:0 0 15px 0;
+}
+._bensik_solution_content_title {
+	font-family: Inter;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color: var(--color1);
+	margin:0 0 20px 0;
+}
+._bensik_solution_content_para {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	color: var(--color);
+	max-width: 80%;
+	margin:0 0 30px 0;
+}
+._bensik_solution_content_link {
+	display: block;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    padding: 21px 42px;
+    background: var(--bg1);
+    box-shadow: 0px 20px 30px -16px rgb(60 80 224 / 20%);
+    border-radius: 10px;
+    width: 170px;
+	transition:.2s all ease;
+}
+._bensik_solution_content_link:hover {
+	color: #fff;
+    background: var(--bg1);
+}
+/*---- Responsive Start ------*/
+@media(min-width:1200px) and (max-width:1399px) {
+	._bensik_solution_content_para {
+		font-size: 16px;
+		max-width: 100%;
+	}
+}
+@media(max-width:1199px) {
+	._bensik_solution_content_title {
+		font-size: 40px;
+	}
+	._bensik_solution_content_para {
+		font-size: 16px;
+		max-width: 100%;
+	}
+}
+@media(max-width:991px) {
+	._bensik_solution_image {
+		margin: 60px 0 0;
+	}
+}
+@media(max-width:767px) {
+	._bensik_solution_content {
+		text-align: center;
+	}
+	._bensik_solution_content_link {
+		margin: 0 auto;
+	}
+}
+@media(max-width:575px) {
+	._bensik_solution_shape {
+		display: none;
+	}
+	._bensik_solution_content_txt {
+		font-size: 16px;
+	}
+	._bensik_solution_content_title {
+		font-size: 36px;
+	}
+	._bensik_solution_wrapper {
+		padding: 50px 0;
+	}
+}
+/*---- Responsive End ------*/
+/*------ Solution css End --------*/
+
+/*------ Marketing css --------*/
+._bensik_marketing_wrapper {
+	padding:80px 0;
+}
+._bensik_marketing_card {
+	background: var(--bg1);
+	border: 1px solid #F5F5F5;
+	border-radius: 20px;
+	padding: 42px 38px;
+	text-align: center;
+}
+._bensik_marketing_card_title{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color: #FFFFFF;
+	margin:0 0 16px 0;
+}
+._bensik_marketing_card_txt{
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: #FFFFFF;
+	margin: 0 0 6px 0;
+}
+._bensik_marketing_card_para{
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	color: #FFFFFF;
+	opacity: 0.8;
+	max-width: 74%;
+    margin: 0 auto;
+}
+._bensik_marketing_card1 {
+	background: #FF5670;
+}
+._bensik_marketing_card2 {
+	background: #FDB400;
+}
+._bensik_marketing_card3 {
+	background: var(--color);
+}
+/*---- Responsive Start ------*/
+@media(min-width:1200px) and (max-width:1399px) {
+	._bensik_marketing_card_para {
+		font-size: 16px;
+		max-width: 98%;
+	}
+}
+@media(max-width:1199px) {
+	._bensik_marketing_card_para {
+		max-width: 100%;
+	}
+}
+@media(max-width:991px) {
+	._bensik_marketing_card {
+		margin: 0 0 20px 0;
+	}
+}
+._bensik_marketing_wrapper {
+    padding: 50px 0;
+}
+/*---- Responsive End ------*/
+/*------ Marketing css End --------*/
+
+/*------ Pricing css --------*/
+._bensik_pricing_wrapper {
+	padding:80px 0;
+}
+._bensik_pricing_content {
+	text-align: center;
+}
+._bensik_pricing_content_txt {
+	font-family: Inter;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color: var(--color1);
+	margin:0 0 10px 0;
+}
+._bensik_pricing_content_para {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	color: var(--color);
+	max-width: 44%;
+    margin: 0 auto 70px auto;
+}
+._bensik_pricing_card {
+	background: #FFFFFF;
+	border-radius: 20px;
+	padding:52px 40px;
+	margin: 0 16px;
+}
+._bensik_pricing_card_info {
+    display: flex;
+    align-items: center;
+	margin:0 0 62px 0;
+}
+._bensik_pricing_card_info_icon {
+	border-radius: 20px;
+	width: 90px;
+	height: 90px;
+	background: #e2e5fa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+._bensik_pricing_card_info_txt {
+	padding:0 0 0 26px;
+}
+._bensik_pricing_card_info_title {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: var(--color1);
+	margin:0 0 12px 0;
+}
+._bensik_pricing_card_info_para {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: var(--color1);
+}
+._bensik_pricing_card_item {
+	margin: 0 0 40px 0;
+	position: relative;
+	transition: .2s all ease;
+}
+._bensik_pricing_card_item::before {
+	content:url("../images/correct.svg");
+	position: absolute;
+	top:-4px;
+	left:0;
+	width:28px;
+	height:28px;
+	background:#e2e5fa;
+	border-radius: 50%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._bensik_pricing_card_item span {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: var(--color);
+	display: block;
+    margin: 0 0 0 40px;
+}
+._border1 {
+	opacity: 0.1;
+	border: 1px solid var(--color);	
+}
+._bensik_pricing_card_title {
+	font-family: Inter;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: -0.02em;
+	color: var(--color1);
+	margin:45px 0 55px 0;
+}
+._besik_pricing_card_btn {
+	width:fit-content;
+	margin:0 auto;
+}
+._bensik_pricing_card_link {
+	outline:none;
+	border: 1px solid var(--bg1);
+	border-radius: 20px;
+	padding:23px 89px;
+	background: transparent;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: var(--bg1);
+	transition:.2s all ease;
+}
+._bensik_pricing_card:hover ._bensik_pricing_card_link {
+	background: var(--bg1);
+	color:#fff;
+}
+/*---- Responsive Start ------*/
+@media(min-width:1200px) and (max-width:1399px) {
+	._bensik_pricing_content_para {
+		max-width: 50%;
+	}
+	._bensik_pricing_card_item span {
+		font-size: 16px;
+	}
+}
+@media(max-width:1199px) {
+	._bensik_pricing_content_para {
+		font-size: 16px;
+		max-width: 54%;
+	}
+	._bensik_pricing_card {
+		margin: 0;
+	}
+	._bensik_pricing_card_link {
+		padding: 20px 58px;
+	}
+	._bensik_pricing_card_item span {
+		font-size: 14px;
+	}
+}
+@media(max-width:991px) {
+	._bensik_pricing_card {
+		margin: 0 0 20px 0;
+	}	
+}
+@media(max-width:575px) {
+	._bensik_pricing_content_txt {
+		font-size: 36px;
+	}
+	._bensik_pricing_content_para {
+		max-width: 100%;
+	}
+	._bensik_pricing_card_info_title {
+		font-size: 22px;
+	}
+	._bensik_pricing_card_title {
+		font-size: 36px;
+	}
+	._bensik_pricing_wrapper {
+		padding: 50px 0;
+	}
+}
+/*---- Responsive End ------*/
+/*------ Pricing css End --------*/
+
+/*------ Blog css --------*/
+._bensik_blog_wrapper {
+	padding:80px 0;
+}
+._bensik_blog_content {
+	text-align: center;
+}
+._bensik_blog_content_title {
+	font-family: Inter;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color: var(--color1);
+	margin:0 0 10px 0;
+}
+._bensik_blog_content_para {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	color: var(--color);
+	max-width: 42%;
+	margin:0 auto 50px auto;
+}
+._bensik_blog_image {
+    background: #E1ECFF;
+    border-radius: 10px;
+    padding: 20px 20px 0;
+	max-width: 380px;
+}
+._blog_img {
+	max-width:340px;
+	margin:0 auto;
+	border-radius: 6px 6px 0px 0px;
+}
+._bensik_blog_inner_txt {
+    padding: 20px;
+}
+._bensik_blog_inner_title a {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4;
+	letter-spacing: -0.01em;
+	color: var(--color1);
+	margin:0 0 10px 0;
+	display: block;
+}
+._bensik_blog_inner_para {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+	color: var(--color);
+	max-width: 80%;
+	display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+._bensik_blog_btn {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 0;
+}
+._bensik_blog_btn_link {
+	background: var(--bg1);
+	box-shadow: 0px 20px 30px -16px rgba(60, 80, 224, 0.2);
+	border-radius: 10px;
+	width: 170px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: #FFFFFF;
+	transition:.2s all ease;
+}
+._bensik_blog_btn_link:hover {
+	color: #fff;
+    background: var(--bg1);
+}
+/*---- Responsive Start ------*/
+@media(min-width:1200px) and (max-width:1399px) {
+	._bensik_blog_content_para {
+		max-width: 50%;
+	}
+	._bensik_blog_inner_para {
+		max-width: 96%;
+	}
+}
+@media(max-width:1199px) {
+	._bensik_blog_content_para {
+		font-size: 16px;
+	}
+	._bensik_blog_inner_title a {
+		font-size: 20px;
+	}
+	._bensik_blog_inner_para {
+		font-size: 14px;
+		max-width: 100%;
+	}
+}
+@media(max-width:991px) {
+	._bensik_blog_image {
+		margin: 0 auto;
+	}
+	._bensik_blog_inner_txt {
+		text-align: center;
+	}
+	._bensik_blog_inner_para {
+		max-width: 60%;
+		margin: 0 auto;
+	}
+}
+@media(max-width:575px) {
+	._bensik_blog_content_title {
+		font-size: 36px;
+	}
+	._bensik_blog_content_para {
+		max-width: 100%;
+	}
+	._bensik_blog_image {
+		max-width: 100%;
+	}
+	._bensik_blog_inner_para {
+		max-width: 100%;
+	}
+	._bensik_blog_wrapper {
+		padding: 50px 0;
+	}
+}
+/*---- Responsive End ------*/
+/*------ Blog css End --------*/
+
+/*------ Client css --------*/
+._bensik_client_wrapper {
+	padding:80px 0;
+}
+._bensik_client_content {
+	text-align: center;
+}
+._bensik_client_content_title {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 1.4;
+	letter-spacing: -0.02em;
+	color: var(--color1);
+	margin: 0 0 70px 0;
+}
+._bensik_client_inner {
+	background: #FFFFFF;
+	border-radius: 20px;
+	padding:45px 30px;
+}
+._bensik_client_info {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	margin:0 0 29px 0;
+}
+._bensik_client_info_content {
+	display: flex;
+	align-items: center;
+}
+._client_img {
+	width: 52px;
+	border-radius: 50%;
+}
+._bensik_client_info_txt {
+	padding:0 0 0 17px;
+}
+._bensik_client_info_title {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.4;
+	letter-spacing: -0.01em;
+	color: var(--color1);
+	margin:0 0 6px 0;
+}
+._bensik_client_info_para {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: var(--color);
+}
+._bensik_client_inner_para {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.4;
+	letter-spacing: -0.01em;
+	color: var(--color);
+	max-width: 84%;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*---- Responsive Start ------*/
+@media(min-width:1200px) and (max-width:1399px) {
+	._bensik_client_inner_para {
+		max-width: 100%;
+	}
+}
+@media(max-width:1199px) {
+	._bensik_client_inner_para {
+		max-width: 100%;
+		font-size: 16px;
+	}
+	._bensik_client_info_para {
+		font-size: 14px;
+	}
+}
+@media(max-width:991px) {
+	._bensik_client_inner {
+		margin: 0 0 20px 0;
+	}
+}
+@media(max-width:767px) {
+	._bensik_client_content_title {
+		font-size: 36px;
+	}
+}
+@media(max-width:575px) {
+	._bensik_client_wrapper {
+		padding: 50px 0;
+	}
+}
+/*---- Responsive End ------*/
+/*------ Client css End --------*/
+
+/*------ CTA css --------*/
+._cta_marketing_wrapper {
+    padding: 80px 0 50px;
+}
+._cta_marketing_content_wrap {
+    background: #EBEEFC;
+    border-radius: 20px;
+    padding: 50px 0;
+}
+._cta_marketing_input_wrap {
+    margin: 60px 0 30px;
+}
+._cta_marketing_content_heading {
+    text-align: center;
+}
+._cta_marketing_content_heading_title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    color: var(--color1);
+    margin: 0 0 10px 0;
+}
+._cta_marketing_form {
+    position: relative;
+}
+._cta_marketing_input_ic {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+}
+._cta_marketing_input {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    padding: 24px 170px 24px 64px;
+	outline:none;
+}
+._cta_marketing_input::placeholder {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: var(--color);
+	opacity: 0.5;
+}
+._cta_marketing_input:focus::placeholder {
+	opacity:0;
+	transition:.2s all ease;
+}
+._cta_marketing_input_btn {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    padding: 16px 28px;
+    background: var(--bg1);
+    border-radius: 10px;
+    border: none;
+    outline: none !important;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+/*---- Responsive -----*/
+@media(max-width:991px) {
+	._cta_marketing_content_wrap {
+		padding: 50px 40px;
+	}
+	._cta_marketing_content_heading_title {
+		font-size: 36px;
+	}
+}
+@media(max-width:575px) {
+	._cta_marketing_content_wrap {
+		padding: 50px 22px;
+	}
+	._cta_marketing_content_heading_title {
+		font-size: 22px;
+	}
+	._cta_marketing_input_btn {
+		position: relative;
+		right: inherit;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	._cta_marketing_wrapper {
+		padding: 50px 0;
+	}
+}
+/*------ CTA css End --------*/
+
+/*------ Footer css --------*/
+._footer_marketing_wrapper {
+    padding: 80px 0 0;
+}
+
+._footer_marketing_wrap {
+    padding: 20px 0 80px;
+}
+
+._footer_marketing_logo {
+    max-width: 130px;
+}
+
+._footer_marketing_content_para {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    color: #7F8BA7;
+    opacity: 0.8;
+    margin: 15px 0;
+}
+
+._footer_marketing_content_follow_title {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color1);
+    margin: 0 0 14px 0;
+}
+
+._footer_marketing_content_follow_list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+._footer_marketing_content_follow_list_item {
+    margin: 0 14px 0 0;
+}
+
+._footer_marketing_content_title {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color1);
+    margin: 0 0 10px 0;
+}
+
+._footer_marketing_content_list {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+._footer_marketing_content_list_item {
+    margin: 16px 0;
+}
+
+._footer_marketing_content_list_link {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color) !important;
+    opacity: 0.8;
+    display: block;
+    width: fit-content;
+    margin: 8px 0;
+}
+
+._footer_marketing_content_list_link:hover {
+    color: var(--color1) !important;
+}
+
+._footer_marketing_copyright_wrap {
+    background: var(--color1);
+    padding: 20px 0;
+}
+
+._footer_marketing_copyright_txt {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+._footer_marketing_privacy_list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+._footer_marketing_privacy_list_link {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: right;
+    letter-spacing: -0.01em;
+    color: #FFFFFF !important;
+    opacity: 0.8;
+    display: block;
+    width: fit-content;
+    margin: 0 15px;
+}
+
+._footer_marketing_privacy_list_link:hover {
+    opacity: 1;
+}
+
+._footer_marketing_privacy_list_link_left_border {
+    border-left: 1px solid rgba(255, 255, 255, .8);
+}
+/*----- Responsive ----*/
+@media(max-width:991px) {
+	._footer_marketing_copyright_wrap {
+		text-align: center;
+	}
+	._footer_marketing_privacy_list {
+		justify-content: center;
+		margin: 20px 0 0;
+	}
+}
+@media(max-width:767px) {
+	._footer_marketing_content_wrap {
+		margin: 30px 0 0;
+	}
+}
+@media(max-width:575px) {
+	._footer_marketing_wrapper {
+		padding: 50px 0 0;
+	}
+}
+/*------ Footer css End --------*/
+:root {
+	--color: #627193;
+	--color1: #00005C;
+	--color2: var(--bg1);
+	--color3: #00005C;
+	--bg:#FFFFFF;
+	--bg1:#3C50E0;
+}
